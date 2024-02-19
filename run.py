@@ -96,7 +96,8 @@ def get_last_5_entries_sales():
     columns = []
     for ind in range(1,7):
         column = sales.col_values(ind)
-        columns.append(column)[-5:]
+        columns.append(column[-5:])
+    pprint(columns)
     
     return columns
     
